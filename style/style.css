@@ -1,0 +1,482 @@
+*{
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+
+
+@font-face {
+    font-family: 'Anton'; 
+    src: url('../fonts/Antonio-Bold.ttf'); 
+  }
+
+:root{
+    --hatterszin:rgb(20, 20, 22);
+    --betuszin:rgba(255, 255, 255, 0.966);
+}
+
+body{
+    background-color: var(--hatterszin);
+    color: var(--betuszin);
+    box-sizing: border-box;
+    font-family: Arial !important;
+}
+.hatter-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+h4{
+   
+    font-weight: 550 !important;
+}
+.hatter {
+    background-image: url("../img/backg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65%;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 0 0 150px #000000e3;
+    pointer-events: auto;
+    transition: transform 0.3s ease; 
+}
+
+.box{
+    background-color: rgba(20, 20, 22, 0.527);
+    border-radius: 25px;
+    border: 0.5mm solid #37383f6e;
+    backdrop-filter: blur(10px) !important;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow:  0 0 50px #000000b9;
+    padding: 40px;
+    width: fit-content;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 70px;
+   
+  
+}
+
+.minibox{
+    width: fit-content;
+    padding: 15px;
+    border-radius: 25px;
+    border: 0.5mm solid #37383f6e;
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(20, 20, 22, 0.527);
+    margin: 5px;
+    transition: 0.3s all !important;
+}
+.minibox:hover{
+    filter: brightness(140%);
+    transition: 0.3s all !important;
+    -webkit-filter: brightness(140%);
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+.minibox img{
+    height: 25px;
+    width: auto;
+}
+
+#ismeretek .col{
+ 
+    text-align: center !important;
+    
+}
+#ismeretek ul{
+    list-style-type: none;
+    padding-left: 0px !important;
+
+    text-align: center;
+  
+}
+#ismeretek ul li{
+    display: inline-block;
+}
+.row{
+    --bs-gutter-x:0rem !important;
+}
+h4{
+    margin-bottom: 10px;
+}
+
+h4, h5{
+    zoom: 0.9;
+}
+span, h4, h5{
+    display: inline-block !important;
+}
+#profil{
+    width: 90px;
+    height: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 10px;
+  
+}
+
+strike{
+    color: rgba(255, 255, 255, 0.459);
+
+}
+.kissebbszurke{
+    color:rgba(255, 255, 255, 0.671);
+    zoom: 0.8;
+}
+.kissebb{
+    zoom: 1.1;
+    margin-left: 5px;
+    float: right;
+    opacity: 70%;
+}
+.piros{
+    color: rgba(248, 149, 149, 0.555);
+}
+.kek{
+    color: rgba(149, 131, 250, 0.822);
+}
+@media only screen and (min-width: 1000px) {
+    #projektek{
+        margin-top: 40px;
+    }
+    .box{
+        min-height: 150px;
+        max-height: 100%;
+    }
+   
+}
+@media only screen and (max-width: 1198px) {
+    .box{
+        width: 80% !important;
+        text-align: center;
+    }
+}
+
+.projectbox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #37383f6e;
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(20, 20, 22, 0.527);
+    margin: 5px;
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.projectbox:hover {
+    filter: brightness(140%);
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+#negyszaznegy .gomb{
+    margin-top: 20px;
+    text-decoration: none !important;
+    color: rgba(230, 230, 230, 0.863);
+    font-weight: bold;
+    text-align: center !important;
+}
+.gomb{
+    
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #37383f6e;
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(20, 20, 22, 0.527);
+    margin: 5px;
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.gomb:hover{
+    filter: brightness(140%);
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+.project-icon {
+    margin-right: 10px;
+}
+
+.project-icon img {
+    width: 40px; /* Kisebb ikon méret */
+    height: auto;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.technologies {
+    margin-top: 2px !important;
+}
+
+.technologies img {
+    width: 18px; /* Kisebb technológia ikon méret */
+    height: auto;
+    margin-right: 2px;
+}
+
+
+@media only screen and (min-width: 1198px) {
+    #projektek{
+        max-width: fit-content !important;
+    }
+    #ismeretek{
+        max-width: 400px;
+    }
+}
+#minibox-container{
+ 
+    list-style-type: none ;
+    padding-left: 0px !important;
+}
+#minibox-container li{
+    display: inline-block;
+}
+#minibox-container a{
+    text-decoration: none !important;
+    color: rgba(255, 255, 255, 0.918);
+}
+@media only screen and (max-width: 1198px) {
+    .contacts{
+        margin-top: 20px !important;
+    }
+    .projectbox {
+        width: 35vw !important;
+    }
+    #ismeretek{
+        width: 80% !important;
+    }
+    .box{
+        width: 80% !important;
+    }
+    #projektek{
+        width: 80% !important;
+        
+    }
+    #projektek #minibox-container{
+        text-align: center;
+    }
+    #projektek{
+        margin-bottom: 100px;
+    }
+    h4{
+        zoom: 1.1 !important;
+        margin-bottom: 15px !important;
+    }
+    .kissebb{
+        float: none !important;
+    }
+    .background{
+        display: block !important;
+    }
+    .hatter{
+        display: none;
+    }
+}
+.background {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><text x="0" y="100" font-size="40" font-family="Arial" fill="rgba(255, 255, 255, 0.040)" transform="rotate(50 100 100)">revafekete</text></svg>');
+    background-size: 200px 200px;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -400px -400px;
+    }
+}
+
+.contacts {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    margin: 0 auto !important;
+}
+
+.contacts li {
+    margin: 0 auto;
+    transition: 0.3s all;
+
+}
+.contacts li:hover {
+    transition: 0.3s all;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+}
+.contacts img {
+    width: 20px; /* Állítsd be az ikon méretét az igényeid szerint */
+    height: auto;
+}
+@media only screen and (max-width: 1198px) {
+    .contacts{
+        margin-top: 20px !important;
+    }
+    .projectbox{
+        display: block !important;
+        width: 40vw;
+        height: 120px;
+    }
+    .kissebb{
+        margin-bottom: 20px;
+    }
+    .project-icon{
+        margin-right: 0px !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #1d1d1d;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #242424;
+  }
+
+
+  p{
+    margin-bottom: 10px !important;
+
+  }
+
+  .bmc-btn {
+    border: 0.5mm solid #37383f6e !important;
+    margin-top: 10px;
+    min-width: 150px !important;
+    color: #000000;
+    background-color: #7b7b7b71 !important;
+    height: 60px;
+    border-radius: 20px !important;
+    font-size: 28px;
+    font-weight: Normal;
+   
+    padding: 0px 24px;
+    line-height: 27px;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    font-family: 'Cookie', cursive !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+.bmc-btn:hover {
+    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
+}
+#gorgessfel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(22 22 24);
+    border: 0.5mm solid #37383f6e !important;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000  !important;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+}
+#gorgessfel:hover {
+    filter: brightness(140%);
+    transition: 0.3s all !important;
+    -webkit-transition: 0.3s all !important;
+    -moz-transition: 0.3s all !important;
+    -ms-transition: 0.3s all !important;
+    -o-transition: 0.3s all !important;
+}
+#gorgessfel.visible {
+    opacity: 1 !important;
+
+}
+
+.keskeny{
+    font-weight: 200 !important;
+    opacity: 80% !important;
+}
