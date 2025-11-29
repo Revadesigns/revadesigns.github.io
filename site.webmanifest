@@ -1,0 +1,16 @@
+{
+  "name": "REVA DESIGNS",
+  "short_name": "REVA",
+  "description": "UX/UI & Visual Designer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141416",
+  "theme_color": "#141416",
+  "icons": [
+    {
+      "src": "/img/REVA_favicon.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    }
+  ]
+}
