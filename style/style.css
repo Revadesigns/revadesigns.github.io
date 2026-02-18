@@ -6,22 +6,96 @@
     -o-transition: 0.3s all !important;
 }
 
-
+/* Regular */
 @font-face {
-    font-family: 'Anton'; 
-    src: url('../fonts/Antonio-Bold.ttf'); 
-  }
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYTHINITALIC.OTF") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* UltraLight Italic */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYULTRALIGHTITALIC.OTF") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYLIGHTITALIC.OTF") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* SemiBold Italic */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYSEMIBOLDITALIC.OTF") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Heavy Italic */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYHEAVYITALIC.OTF") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/sfpro/SFPRODISPLAYBLACKITALIC.OTF") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
 
 :root{
     --hatterszin:rgb(20, 20, 22);
     --betuszin:rgba(255, 255, 255, 0.966);
 }
-
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body{
-    background-color: var(--hatterszin);
+  
+    background: radial-gradient(circle at top, #1a1a1f, #0b0b0d) !important;
+background-repeat: repeat;
+background-size: auto;
     color: var(--betuszin);
     box-sizing: border-box;
-    font-family: Arial !important;
+    font-family: "sfpro", sans-serif !important;
 }
 .hatter-container {
     position: fixed;
@@ -149,10 +223,10 @@ strike{
     opacity: 70%;
 }
 .piros{
-    color: rgba(248, 149, 149, 0.555);
+    color: #f65c5c;
 }
 .kek{
-    color: rgba(149, 131, 250, 0.822);
+    color: #8B5CF6;
 }
 @media only screen and (min-width: 1000px) {
     #projektek{
@@ -174,7 +248,7 @@ strike{
 .projectbox {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 20px;
     border: 1px solid #37383f6e;
     backdrop-filter: blur(10px) !important;
@@ -374,11 +448,30 @@ strike{
     .contacts{
         margin-top: 20px !important;
     }
-    .projectbox{
-        display: block !important;
-        width: 40vw;
-        height: 120px;
-    }
+     #projektek ul {
+    padding: 0;
+  
+  }
+
+  #projektek li {
+    display: block;
+    width: 100%;
+  }
+
+  #projektek a {
+    display: block;
+    width: 100%;
+  }
+
+  .projectbox {
+    width: 100% !important;
+    justify-content: flex-start;
+      margin-bottom: 10px;
+  }
+
+  .projectbox {
+    width: 100% !important;
+  }
     .kissebb{
         margin-bottom: 20px;
     }
