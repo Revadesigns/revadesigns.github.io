@@ -610,7 +610,7 @@ strike{
   .mobile-profile p {
     margin: 0;
     font-size: 15px;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 
   .contacts {
@@ -680,11 +680,12 @@ strike{
     margin-bottom: 0px !important;
   }
   #fullname{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   .kissebbszurke{
-    font-size: 0.98rem;
+    font-size: 1.050rem;
+    font-weight: 400 !important;
   }
 }
 @media only screen and (max-width: 768px) {
