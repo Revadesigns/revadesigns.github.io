@@ -131,7 +131,7 @@
             document.getElementById('introduction-mobile').innerHTML = 'Introduction 👋 ';
             document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
             document.getElementById('support').innerHTML = 'Support? ';
-            document.getElementById('projects').innerHTML = 'Projects. (HU, most are school)';
+            document.getElementById('projects').innerHTML = 'Projects. <span class="keskeny">Mostly academic.</span>';
             document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
         }
                 } catch (error) {
@@ -161,6 +161,7 @@
             <div class="mobile-profile">
                 <img src="img/revafekete.png" alt="" id="profil">
 
+                  <div class="mobile-profile-text">
                 <p id="fullname">
                     <b>Fekete Réva</b>  <br>
                     <span class="kissebbszurke">@revafekete.</span>
@@ -188,6 +189,7 @@
                         </a>
                     </li>
                 </ul>
+                </div>
             </div>
 
             <!-- DIVIDER -->
@@ -358,7 +360,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="box" id="projektek">
-                        <h4 id="projects">Projektek. (legtöbb iskolai) </h4>   <span class="kissebb" id="contr"> saját / <span class="kek">résztvevő</span></span>
+                        <h4 id="projects">Projektek. <span class="keskeny">(legtöbb iskolai)</span> </h4>   <span class="kissebb" id="contr"> saját / <span class="kek">résztvevő</span></span>
                         <ul id="minibox-container">
                         <li> 
                             <a href="https://hemonaplo.hu/hirek/" target="_blank">

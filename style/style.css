@@ -586,7 +586,8 @@ strike{
 
 .keskeny{
     font-weight: 200 !important;
-    opacity: 80% !important;
+    opacity: 40% !important;
+  
 }
 
 @media only screen and (max-width: 1198px) {
@@ -604,15 +605,12 @@ strike{
     gap: 15px;
   }
 
-  .mobile-profile #profil {
-    width: 70px;
-    border-radius: 18px;
-  }
+ 
 
   .mobile-profile p {
     margin: 0;
     font-size: 15px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
 
   .contacts {
@@ -622,7 +620,7 @@ strike{
   }
 
   .contacts img {
-    width: 18px;
+    width: 18px !important;
     opacity: 0.85;
   }
 
@@ -633,7 +631,10 @@ strike{
     margin: 18px 0;
     border-radius: 999px;
   }
-
+    .mobile-profile #profil {
+        width: 75px;
+        border-radius: 18px;
+    }
   .mobile-intro h4 {
     font-size: 18px !important;
     margin-bottom: 10px;
@@ -644,7 +645,47 @@ strike{
     opacity: 0.85;
     line-height: 1.5;
   }
+ .mobile-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
 
+  .mobile-profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .contacts {
+    margin: 0 !important;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    gap: 10px;
+
+    justify-content: flex-start !important;
+  }
+
+  .contacts li {
+    margin: 0;
+  }
+
+  .contacts img {
+    width: 18px;
+    opacity: 0.85;
+  }
+  p{
+    margin-bottom: 0px !important;
+  }
+  #fullname{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .kissebbszurke{
+    font-size: 0.98rem;
+  }
 }
 @media only screen and (max-width: 768px) {
     #support,
@@ -653,3 +694,4 @@ strike{
         display: none !important;
     }
 }
+
