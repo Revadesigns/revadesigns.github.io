@@ -166,9 +166,11 @@ h4{
     width: fit-content;
     padding: 15px;
     border-radius: 25px;
-    border: 0.5mm solid #37383f6e;
+
     backdrop-filter: blur(10px) !important;
-    background-color: rgba(20, 20, 22, 0.527);
+ 
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.06);
     margin: 5px;
     transition: 0.3s all !important;
 }
@@ -268,9 +270,11 @@ strike{
     align-items: center;
     padding: 10px 15px;
     border-radius: 20px;
-    border: 1px solid #37383f6e;
+
     backdrop-filter: blur(10px) !important;
-    background-color: rgba(20, 20, 22, 0.527);
+  
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.06);
     margin: 5px;
     transition: 0.3s all !important;
     -webkit-transition: 0.3s all !important;
@@ -284,6 +288,7 @@ strike{
 }
 
 .projectbox:hover {
+    transform: translateY(-4px);
     filter: brightness(140%);
     transition: 0.3s all !important;
     -webkit-transition: 0.3s all !important;
@@ -318,6 +323,7 @@ strike{
     -o-border-radius: 20px;
 }
 .gomb:hover{
+    transform: translateY(-4px);
     filter: brightness(140%);
     transition: 0.3s all !important;
     -webkit-transition: 0.3s all !important;
@@ -521,11 +527,12 @@ strike{
   }
 
   .bmc-btn {
-    border: 0.5mm solid #37383f6e !important;
+  
     margin-top: 10px;
     min-width: 150px !important;
     color: #000000;
-    background-color: #7b7b7b71 !important;
+       background: rgba(255,255,255,0.01) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
     height: 60px;
     border-radius: 20px !important;
     font-size: 28px;
@@ -545,15 +552,15 @@ strike{
     -o-border-radius: 20px !important;
 }
 .bmc-btn:hover {
+  transform: translateY(-4px);
     filter: brightness(140%);
-    -webkit-filter: brightness(140%);
 }
 #gorgessfel {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(22 22 24);
-    border: 0.5mm solid #37383f6e !important;
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.06) !important;
     color: white;
     border: none;
     border-radius: 20px;
@@ -572,12 +579,9 @@ strike{
     -o-transition: opacity 0.5s ease;
 }
 #gorgessfel:hover {
+
+   transform: translateY(-4px);
     filter: brightness(140%);
-    transition: 0.3s all !important;
-    -webkit-transition: 0.3s all !important;
-    -moz-transition: 0.3s all !important;
-    -ms-transition: 0.3s all !important;
-    -o-transition: 0.3s all !important;
 }
 #gorgessfel.visible {
     opacity: 1 !important;
@@ -696,3 +700,137 @@ strike{
     }
 }
 
+@media (max-width: 1198px) {
+  #ismeretek ul {
+    display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .minibox {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+  }
+
+  .minibox img {
+    width: 22px;
+  }
+}
+@media (max-width: 1198px) {
+  #ismeretek {
+    padding: 20px !important;
+  }
+  .keskeny {
+  font-size: 17px;
+  opacity: 0.5;
+}
+}
+@media (min-width: 1198px) {
+
+
+  #ismeretek ul {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    justify-items: center;
+    align-items: center;
+
+    margin-top: 20px;
+  }
+
+  .minibox {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+    padding: 0;
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.06);
+  
+
+    transition: 0.25s;
+  }
+
+  .minibox:hover {
+    transform: translateY(-4px);
+    filter: brightness(140%);
+  }
+
+  .minibox img {
+    width: 26px;
+    height: auto;
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: 1198px) {
+
+  #projektek ul {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  #projektek ul li {
+    list-style: none;
+  }
+}
+@media (min-width: 1198px) {
+
+  .projectbox {
+    padding: 14px 16px !important;
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.06);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.25s ease;
+  }
+
+  .projectbox:hover {
+    transform: translateY(-4px);
+    filter: brightness(130%);
+  }
+}
+@media (min-width: 1198px) {
+
+  .project-icon img {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .project-details h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .technologies {
+    display: flex;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .technologies img {
+    width: 16px;
+    opacity: 0.75;
+  }
+}
