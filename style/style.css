@@ -263,6 +263,7 @@ strike{
         width: 80% !important;
         text-align: center;
     }
+   
 }
 
 .projectbox {
@@ -662,7 +663,7 @@ strike{
   content: "";
   position: absolute;
   inset: -30px;
-  background: radial-gradient(circle, rgba(121, 119, 221, 0.103), transparent 70%);
+background: radial-gradient(circle, rgba(44, 44, 61, 0.336), transparent 70%);
   z-index: -1;
   }
 
@@ -709,13 +710,16 @@ strike{
     .box:has(#support) {
         display: none !important;
     }
+     .projectbox {
+        margin-bottom: 15px;
+    }
 }
   #projektek::before{
  
   content: "";
   position: absolute;
   inset: -30px;
-  background: radial-gradient(circle, rgba(92, 93, 196, 0.041), transparent 70%);
+  background: radial-gradient(circle, rgba(44, 44, 61, 0.096), transparent 70%);
   z-index: -1;
   }
   #projektek ul li {
@@ -727,13 +731,13 @@ strike{
   content: "";
   position: absolute;
   inset: -30px;
-  background: radial-gradient(circle, rgba(92, 94, 196, 0.041), transparent 70%);
+  background: radial-gradient(circle, rgba(44, 44, 61, 0.178), transparent 70%);
   z-index: -1;
   }
   #ismeretek ul {
     display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
+    gap: 7px;
     justify-items: center;
     
   }
