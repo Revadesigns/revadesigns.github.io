@@ -559,7 +559,9 @@ strike{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(255,255,255,0.01);
+ background: rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(14px);
     border: 1px solid rgba(255,255,255,0.06) !important;
     color: white;
     border: none;
