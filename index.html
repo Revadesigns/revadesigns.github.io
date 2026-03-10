@@ -68,6 +68,9 @@
               document.getElementById('introduction-mobile').innerHTML = 'Bemutatkozás 👋 ';
             document.getElementById('support').innerHTML = 'Támogatás? ';
             document.getElementById('projects').innerHTML = 'Projektek. <span class="keskeny">(legtöbb sulis)</span> ';
+            document.getElementById('newportf').innerHTML = 'Jelenleg egy új portfólión dolgozom, amely UI/UX esettanulmányokat, redesign projekteket és grafikai munkákat mutat be.';
+            document.getElementById('newportfgomb').innerHTML = 'Megtekintés';
+             document.getElementById('newportfh4').innerHTML = 'Új Portfólió 🚧';
             document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
 
         } else if (userLang.startsWith('de')) {
@@ -142,6 +145,9 @@
             document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
             document.getElementById('support').innerHTML = 'Support? ';
             document.getElementById('projects').innerHTML = 'Projects. <span class="keskeny">Mostly academic.</span>';
+            document.getElementById('newportf').innerHTML = 'I am currently working on a new portfolio that will showcase UI/UX case studies, redesign projects, and graphic design work.';
+            document.getElementById('newportfgomb').innerHTML = 'Preview';
+            document.getElementById('newportfh4').innerHTML = 'New Portfolio 🚧';
             document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
         }
                 } catch (error) {
@@ -240,7 +246,7 @@
 
                         <script>
                             let text = "Üdv! Réva vagyok, kezdő ui/ux tervező és kezdő grafikus designer. " +
-                                               "Pomázon élek, nemrég fejeztem be a szoftverfejlesztő szakot, " +
+                                               "Budapesten élek, nemrég fejeztem be a szoftverfejlesztő szakot, " +
                                                "ahol 79%-os eredménnyel végeztem. Jelenleg webdesign és fejlesztés " +
                                                "terén tevékenykedem, és mindig keresem az új lehetőségeket a " +
                                                "fejlődésre és tanulásra. Szenvedélyesen szeretem a dizájnolást " +
@@ -347,12 +353,19 @@
                         </script>
                     </div>
                 </div>
-                <div class="col-xl-3 ">
-                    <div class="box mb-2" >
-                        <h4 id="support">Támogatás.</h4>
-                        <script id="bymc" type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="emmaszanyiq" data-color="rgba(20, 20, 22, 0.527)" data-emoji=""  data-font="Cookie" data-text="Support me" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#ffffff" ></script>
-                    </div>
-                </div>
+            <div class="col-xl-4">
+    <div class="box mb-4" id="portfolio-progress">
+        <h4 id="newportfh4">Új portfólió 🚧</h4>
+        <p id="newportf">
+     Jelenleg egy új portfólión dolgozom, amely UI/UX esettanulmányokat, redesign projekteket és grafikai munkákat mutat be.
+        </p>
+
+        
+    <a class="gomb" id="newportfgomb" onclick="openPreview()">
+Megtekintés
+</a>
+    </div>
+</div>
                     <div class="col-xl-5">
                     <div class="box" id="ismeretek">
                         <h4 id="knowledges">Ismeretek.</h4>
@@ -541,9 +554,40 @@
             button.classList.remove('visible'); 
         }
     };
+function openPreview(){
+    document.getElementById("portfolio-popup").style.display = "flex";
+}
+
+function closePreview(){
+    document.getElementById("portfolio-popup").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const popup = document.getElementById("portfolio-popup");
+
+    popup.addEventListener("click", function(e){
+        if(e.target === popup){
+            closePreview();
+        }
+    });
+
+});
+
 
             </script>
             
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <div id="portfolio-popup" class="popup">
+
+    <div class="popup-content">
+
+        <div class="close" onclick="closePreview()">✕</div>
+
+        <img src="img/dummyfolio.png" alt="New portfolio preview">
+
+    </div>
+
+</div>
     </body>
 </html>
