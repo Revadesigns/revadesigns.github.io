@@ -56,106 +56,92 @@
 }
 </script>
         <script>
-            async function setLanguage() {
-                try {
-                    const userLang = navigator.language || navigator.userLanguage;
-    
-                    if (userLang.startsWith('hu')) {
-            document.documentElement.lang = 'hu';
-            document.getElementById('fullname').innerHTML = 'Fekete Réva  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = 'Skillek.';
-            document.getElementById('introduction').innerHTML = 'Bemutatkozás 👋 ';
-              document.getElementById('introduction-mobile').innerHTML = 'Bemutatkozás 👋 ';
-            document.getElementById('support').innerHTML = 'Támogatás? ';
-            document.getElementById('projects').innerHTML = 'Projektek. <span class="keskeny">(legtöbb sulis)</span> ';
-            document.getElementById('newportf').innerHTML = 'Jelenleg egy új portfólión dolgozom, amely UI/UX esettanulmányokat, redesign projekteket és grafikai munkákat mutat be.';
-            document.getElementById('newportfgomb').innerHTML = 'Megtekintés';
-             document.getElementById('newportfh4').innerHTML = 'Új Portfólió 🚧';
-            document.getElementById('contr').innerHTML = ' saját / <span class="kek">résztvevő</span>';
+           document.addEventListener("DOMContentLoaded", () => {
 
-        } else if (userLang.startsWith('de')) {
-            document.documentElement.lang = 'de';
-            document.getElementById('fullname').innerHTML = 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = 'Kenntnisse.';
-            document.getElementById('introduction').innerHTML = 'Einführung 👋 ';
-            document.getElementById('introduction-mobile').innerHTML = 'Einführung 👋 ';
-            document.getElementById('support').innerHTML = 'Unterstütze? ';
-            document.getElementById('projects').innerHTML = 'Projekte.';
-            document.getElementById('contr').innerHTML = ' eigen / <span class="kek">Mitwirkender</span>';
+const translations = {
 
-        } else if (userLang.startsWith('fr')) {
-            document.documentElement.lang = 'fr';
-            document.getElementById('fullname').innerHTML = 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = 'Connaissances.';
-            document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
-            document.getElementById('introduction-mobile').innerHTML = 'Introduction 👋 ';
-            document.getElementById('support').innerHTML = 'Soutenez? ';
-            document.getElementById('projects').innerHTML = 'Projets.';
-            document.getElementById('contr').innerHTML = ' propre / <span class="kek">contributeur</span>';
+hu: {
+fullname: 'Fekete Réva  <br><span class="kissebbszurke">UI/UX & graphic designer</span>',
+knowledges: 'Ismeretek.',
+introduction: 'Bemutatkozás 👋',
+introductionMobile: 'Bemutatkozás 👋',
+support: 'Támogatás?',
+projects: 'Projektek. <span class="keskeny">(legtöbb sulis)</span>',
+contr: ' saját / <span class="kek">résztvevő</span>',
+newportf: 'Jelenleg egy új portfólión dolgozom, amely UI/UX esettanulmányokat, redesign projekteket és grafikai munkákat mutat be.',
+newportfgomb: 'Megtekintés',
+newportfh4: 'Új portfólió 🚧'
+},
 
-        } else if (userLang.startsWith('ja')) {
-            document.documentElement.lang = 'ja';
-            document.getElementById('fullname').innerHTML = 'エマ・ザンニ  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = '知識.';
-            document.getElementById('introduction').innerHTML = '自己紹介 👋 ';
-            document.getElementById('introduction-mobile').innerHTML = '自己紹介 👋 ';
-            document.getElementById('support').innerHTML = 'サポートしてください。';
-            document.getElementById("bymc").setAttribute("data-text", "サポート");
-            document.getElementById('projects').innerHTML = 'プロジェクト。';
-            document.getElementById('contr').innerHTML = ' 自分 / <span class="kek">貢献者</span>';
+en: {
+fullname: 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>',
+knowledges: 'Skills.',
+introduction: 'Introduction 👋',
+introductionMobile: 'Introduction 👋',
+support: 'Support?',
+projects: 'Projects. <span class="keskeny">Mostly academic.</span>',
+contr: ' own / <span class="kek">contributor</span>',
+newportf: 'I am currently working on a new portfolio that will showcase UI/UX case studies, redesign projects, and graphic design work.',
+newportfgomb: 'Preview',
+newportfh4: 'New Portfolio 🚧'
+},
 
-        } else if (userLang.startsWith('zh')) {
-            document.documentElement.lang = 'zh';
-            document.getElementById('fullname').innerHTML = '艾玛·赞尼  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = '知识.';
-            document.getElementById('introduction').innerHTML = '介绍 👋 ';
-            document.getElementById('introduction-mobile').innerHTML = '介绍 👋 ';
-            document.getElementById('support').innerHTML = '支持我。';
-            document.getElementById("bymc").setAttribute("data-text", "支持");
-            document.getElementById('projects').innerHTML = '项目。';
-            document.getElementById('contr').innerHTML = ' 自己 / <span class="kek">贡献者</span>';
+de: {
+fullname: 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>',
+knowledges: 'Kenntnisse.',
+introduction: 'Einführung 👋',
+introductionMobile: 'Einführung 👋',
+support: 'Unterstützen?',
+projects: 'Projekte.',
+contr: ' eigen / <span class="kek">Mitwirkender</span>'
+},
 
-        } else if (userLang.startsWith('ru')) {
-            document.documentElement.lang = 'ru';
-            document.getElementById('fullname').innerHTML = 'Эмма Сани  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = 'Знания.';
-            document.getElementById('introduction').innerHTML = 'Введение 👋 ';
-            document.getElementById('introduction-mobile').innerHTML = 'Введение 👋 ';
-            document.getElementById('support').innerHTML = 'Поддержи?';
-            document.getElementById("bymc").setAttribute("data-text", "Поддержать");
-            document.getElementById('projects').innerHTML = 'Проекты.';
-            document.getElementById('contr').innerHTML = ' свой / <span class="kek">участник</span>';
+fr: {
+fullname: 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>',
+knowledges: 'Connaissances.',
+introduction: 'Introduction 👋',
+introductionMobile: 'Introduction 👋',
+support: 'Soutenez?',
+projects: 'Projets.',
+contr: ' propre / <span class="kek">contributeur</span>'
+}
 
-        } else if (userLang.startsWith('es')) {
-            document.documentElement.lang = 'es';
-            document.getElementById('fullname').innerHTML = 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = 'Conocimientos.';
-            document.getElementById('introduction').innerHTML = 'Introducción 👋 ';
-            document.getElementById('introduction-mobile').innerHTML = 'Introducción 👋 ';
-            document.getElementById('support').innerHTML = 'Apóyame? ';
-            document.getElementById("bymc").setAttribute("data-text", "Apoyar");
-            document.getElementById('projects').innerHTML = 'Proyectos.';
-            document.getElementById('contr').innerHTML = ' propio / <span class="kek">contribuyente</span>';
+};
 
-        } else { 
-            document.documentElement.lang = 'en';
-            document.getElementById('fullname').innerHTML = 'Réva Fekete  <br><span class="kissebbszurke">UI/UX & graphic designer</span>';
-            document.getElementById('knowledges').innerHTML = 'Skills.';
-            document.getElementById('introduction-mobile').innerHTML = 'Introduction 👋 ';
-            document.getElementById('introduction').innerHTML = 'Introduction 👋 ';
-            document.getElementById('support').innerHTML = 'Support? ';
-            document.getElementById('projects').innerHTML = 'Projects. <span class="keskeny">Mostly academic.</span>';
-            document.getElementById('newportf').innerHTML = 'I am currently working on a new portfolio that will showcase UI/UX case studies, redesign projects, and graphic design work.';
-            document.getElementById('newportfgomb').innerHTML = 'Preview';
-            document.getElementById('newportfh4').innerHTML = 'New Portfolio 🚧';
-            document.getElementById('contr').innerHTML = ' own / <span class="kek">contributor</span>';
-        }
-                } catch (error) {
-                    console.error('Error fetching geolocation data:', error);
-                }
-            }
-    
-            document.addEventListener('DOMContentLoaded', setLanguage);
+
+function applyTranslation(lang){
+
+const t = translations[lang] || translations.en;
+
+set("fullname", t.fullname);
+set("knowledges", t.knowledges);
+set("introduction", t.introduction);
+set("introduction-mobile", t.introductionMobile);
+set("support", t.support);
+set("projects", t.projects);
+set("contr", t.contr);
+set("newportf", t.newportf);
+set("newportfgomb", t.newportfgomb);
+set("newportfh4", t.newportfh4);
+
+document.documentElement.lang = lang;
+
+}
+
+
+function set(id,value){
+const el = document.getElementById(id);
+if(el && value){
+el.innerHTML = value;
+}
+}
+
+
+const userLang = navigator.language.slice(0,2);
+
+applyTranslation(userLang);
+
+});
         </script>
 
     </head>
